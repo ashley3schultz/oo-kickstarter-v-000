@@ -8,15 +8,9 @@ class Backer
     @backed_projects = []
   end
   
-  #def back_project(project_name)
-  #  @backed_projects << project_name
-  #end
-  
   def back_project(project_name)
     @backed_projects << project_name
     @backed_projects.detect {|proj| proj.backers << self if proj.title == project_name.title}
-    
-     
   end
   
 end 
