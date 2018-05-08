@@ -15,9 +15,9 @@ class Backer
   def back_project(project_name)
     @backed_projects << project_name
     @backed_projects.detect {|proj| 
-    pt = proj.title 
-    pnt = project_name.title
-    ptb = proj.title.backers
+    p_t = proj.title 
+    p_n_t = project_name.title
+    p_t_b = proj.title.backers
       binding.pry}
     
      
