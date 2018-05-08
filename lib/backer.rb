@@ -15,7 +15,6 @@ class Backer
   def back_project(project_name)
     @backed_projects << project_name
     @backed_projects.detect {|proj| proj.backers << self if proj.title == project_name.title}
-      #binding.pry
     
      
   end
