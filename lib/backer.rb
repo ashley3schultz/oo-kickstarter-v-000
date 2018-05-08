@@ -13,6 +13,7 @@ class Backer
   
   def back_project(project_name)
     @backed_projects << project_name
+    @backed_projects.detect {|proj| proj.title == project_name}
     Project.add_backer(self) 
   end
   
